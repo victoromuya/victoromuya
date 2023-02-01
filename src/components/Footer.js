@@ -48,7 +48,7 @@ export default function Footer(){
             <div class="container">
            
             
-                <p class="text-center">Copyright @2022 | Designed With <a href="https://reactjs.org/">React.js</a>  by <a href="#">Victor Omuya</a></p>
+                <p class="">Copyright @2022 | Designed With <a href="https://reactjs.org/">React.js</a>  by <a href="#">Victor Omuya</a></p>
 
                 <ul class="social_footer_ul">
                   

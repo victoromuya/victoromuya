@@ -393,3 +393,127 @@ main{
   
 }
 
+
+
+
+@media screen and (max-width: 800px) {
+  .section{
+    padding-left: 0;
+    width: 100%;
+  }
+  
+  .hero{
+    width: 100%;
+  }
+  
+    .pro-img{
+      width: 28%;
+      margin-top: 10%;
+      padding: 0;
+    }
+    frame{
+      background: transparent;
+      float: left;
+      width: 100%;
+      padding: 10px 10px 10px 0px;
+      font-size: 10px;
+      text-align: left;
+    }
+  
+    .aboutme{
+      padding-left: 40px;
+      padding-top: 10%;
+    }
+
+    .aboutme h4{
+      margin-top: 20%;
+    }
+  
+    .myproject{
+      padding-left: 40px;
+      margin-top: 15%;
+    }
+  
+    app{
+      padding-left: 85px;
+      padding-bottom: 0;
+      margin-top: 10px
+    }
+  
+    .card{
+      padding: 2px;
+      margin: 5px;
+    }
+    .home-text{
+      text-align: right;
+      padding-top: 5px;
+      padding-bottom: 30px;
+    }
+    .name{
+      font-size: 20px;
+    }
+  
+    .hero-photo{
+      padding-left: 0px;
+      align-items: left;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+  .section{
+    padding-left: 0;
+    width: 100%;
+  }
+  
+  .hero{
+    width: 100%;
+  }
+  
+    .pro-img{
+      width: 30%;
+      margin-top: 30%;
+      padding: 0;
+    }
+    frame{
+      background: transparent;
+      float: left;
+      width: 100%;
+      padding: 10px 5px 10px 0px;
+      font-size: 8px;
+      text-align: left;
+    }
+  
+    .aboutme{
+      padding-left: 40px;
+      padding-top: 50%;
+    }
+  
+    .myproject{
+      padding-left: 5px;
+    }
+  
+    app{
+      padding-left: 40px;
+    }
+  
+    .card{
+      padding: 2px;
+      margin: 5px;
+    }
+    .home-text{
+      text-align: center;
+      margin-top: 10px;
+      padding-top: 10px;
+      padding-bottom: 30px;
+    }
+    .name{
+      font-size: 20px;
+    }
+  
+    .hero-photo{
+      padding-left: 0px;
+      align-items: left;
+    }
+  
+  }
