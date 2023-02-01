@@ -55,9 +55,9 @@ export default function Header(props){
                     I also use React for for front end designs. Contact me for full stack, backend or frontend 
                     developement jobs. 
                 </p>
-
-                <div className='myproject'><h4>My Projects</h4></div>
             </div>
+
+            <div className='myproject'><h4>Projects</h4></div>
 
              
         </section>
