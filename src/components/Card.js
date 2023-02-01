@@ -10,7 +10,7 @@ import React from 'react'
 //})
 
 
-export default  function Card(props){
+export default function Card(props){
 
     let badgeText
     if (props.item.completed === 0){
@@ -21,8 +21,8 @@ export default  function Card(props){
     }
     
     return (
-        <div>
-            <div className='card'>
+        <main className={props.darkMode ? "dark": ""}>
+            <div className="card">
 
                     <a href={props.item.projectUrl}>
                         {badgeText && <div className='card-badge'>{badgeText}</div>}
@@ -39,7 +39,7 @@ export default  function Card(props){
                         <p>Designed by: Victor Omuya</p>
                     </a>
             </div>
-        </div>
+        </main>
        
     )
 }

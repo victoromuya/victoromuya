@@ -1,23 +1,23 @@
 import React from 'react'
 import profileimage from '../images/vicpic.jpg'
 
-export default function Header(){
+export default function Header(props){
     return (
-        <section >
+        <section className={props.darkMode ? "dark" : ""}>
             <div className='hero'>
            
                 <div className='pro-img'>
                     
                         <img src={profileimage} alt = "" className='hero-photo'/> 
                   
-                    <div className='myword'><p>I am a passionate about what I do and I have an high appetite for daily growth!</p> 
+                    <frame className={props.darkMode ? "dark" : ""}><p>I am passionate about what I do with a very high appetite for daily growth!</p> 
                         <div className='profile-contacts'>
                             <p><i class="fa fa-location-arrow"></i> Lagos State, Nigeria </p>
-                            <p><i class="fa fa-phone"></i>  +234 81 664 612 32  </p>
-                            <p><i class="fa fa-whatsapp"></i> +234 90 999 794 61  </p>
-                            <p><i class="fa fa fa-envelope"></i> viczik16@gmail.com  </p>
+                            <p><i class="fa fa-phone"></i>       +234 81 664 612 32  </p>
+                            <p><i class="fa fa-whatsapp"></i>     +234 90 999 794 61  </p>
+                            <p><i class="fa fa fa-envelope"></i>     viczik16@gmail.com  </p>
                         </div>
-                    </div> 
+                    </frame> 
                 </div>
 
                 <div className='home-text'>

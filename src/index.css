@@ -5,33 +5,135 @@
 body {
   margin: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #282f33;
+  
+}
+
+/*Navbar styles */
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px 20px;
+  height: 40px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  color: black;
+
+}
+
+nav.dark {
+  background-color: #21222A;
+  color: white;
+}
+
+.nav--logo_icon {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.nav--logo_text {
+  
+  margin-right: auto;
+  
+}
+
+.nav--title {
+  color: #DEEBF8;
+}
+
+.toggler {
+  display: flex;
+  align-items: center;
+}
+
+.toggler p {
+  font-size: 0.625rem;
+  font-weight: 600;
+}
+
+.toggler--slider {
+  width: 25px;
+  height: 13px;
+  background-color: #2B283A;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+
+nav.dark .toggler--slider {
+  border-color: white;
+  background-color: #F5F5F5;
+}
+
+.toggler--slider--circle {
+  height: 13px;
+  width: 13px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+nav.dark .toggler--slider--circle {
+  background-color: black;
+}
+
+.toggler--light {
+  color: #2B283A;
+}
+
+nav.dark .toggler--light {
+  color: #918E9B;
+}
+
+.toggler--dark {
+  color: #D5D4D8;
+}
+
+nav.dark .toggler-dark {
+  color: #FFFFFF;
+}
+
+nav.dark .toggler--slider {
+  justify-content: flex-end;
 }
 
 
 section{
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+
+section.dark{
   padding: 0px;
-  max-height: 50%;
+  height: 60%;
+  background-color: #21222A;
+  color: white;
+  padding-bottom: 5px;
+  margin: 0;
 }
 
 .hero{
   display: flex;
-  background-color:#263238;
+  /*background-color:#263238; */
+ /*  background-color:#21222A; background-blend-mode: color-burn;*/
+  background-color:#21222A; 
   background-image: url('images/bgimage.jpg');
   background-repeat: no-repeat;
   background-size:cover;
-  background-blend-mode: darken;
+  background-blend-mode: color-burn;
   width: 100%;
   height: 38%;
   text-align: left;
   float: left;
   padding: 20px;
   z-index: 1;
-  position: absolute;
   color: white;
 }
-
-
 
 .rotate span {
   font-size: 12px;
@@ -73,17 +175,14 @@ section{
   animation-delay: 1.2s;
 }
 
-.card a{
-  text-decoration: none;
-  color: #494d4e;
-}
-
 .home-text{
   align-items: center;
   margin-left: 5%;
   min-width: 100%;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 
@@ -96,8 +195,10 @@ section{
   border-radius: 5px;
   box-shadow: 7px 7px 5px #263238;
   margin-top: 5%;
-  color: black
+  color: black; 
 }
+
+
 
 .profile-contacts{
   width: 100%;
@@ -105,15 +206,15 @@ section{
 }
 
 .profile-contacts p{
-  padding-left: 5px;
+  text-align: center;
   margin: 0;
-  align-items: center;
   width: 100%;
+  
 }
 
 .hero-photo{
   width: 100%;
-  height: 90%;
+  height: 100%;
   padding-left: 20px;
  
   transition: 1s ease;
@@ -128,45 +229,82 @@ section{
   transition: 1s ease;
 }
 
-.myword{
+frame{
+  background: transparent;
   float: left;
   width: 100%;
-  padding: 10px 20px;
+  padding: 10px 10px 10px 20px;
   font-size: 14px;
+  text-align: center;
+}
+
+frame.dark{
+  color: white;
 }
 .aboutme{
   text-align: justify;
   padding-top: 20%;
   width: 80%;
   padding-left: 30%;
+  margin-bottom: 0;
 }
 
 .myproject{
   padding-top: 20px;
-  
+  margin-bottom: 0;
 }
 
-.app-card{
+app{
   flex: 0 0 auto;
   display: flex;
   padding-left: 28%;
   max-width: 100%;
-  flex-basis:  33.333333%;
+  flex-basis: 33.333333%;
   flex-wrap: wrap;
+  color: black;
+ 
 }
 
+app.dark{
+  background-color:#21222A;
+  padding-top: 0;
+  height: 100%;
+  margin: 0;
+  color: white;
+}
+
+
+main.dark{
+  background-color: #21222A;
+
+  margin: 0;
+  padding-bottom: 20%;
+}
+
+main{
+  margin: 0;
+  padding-bottom: 20%;
+
+}
+
+
 .card {
+  
   width: 220px;
   height: 310px;
   font-size: 14px;
   padding: 10px;
-  margin-bottom: 20px;
   position: relative;
   margin: 20px;
   -webkit-transition: all 2s ease;
   -moz-transition: all 2s ease;
   -ms-transition: all 2s ease;
   transition: all 2s ease;
+}
+
+.card a{
+  text-decoration: none;
+  color: black;
 }
 
 .card-image {
@@ -177,6 +315,7 @@ section{
   width: 100%;
   border-radius: 9px;
   height: 80%;
+
 }
 
 .middle {
@@ -191,9 +330,8 @@ section{
 }
 
 .card:hover .card-image {
-  opacity: 0.3;
+  opacity: 0.5;
 }
-
 .card:hover .middle {
   opacity: 1;
 }
