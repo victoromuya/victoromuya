@@ -10,7 +10,7 @@ export default [
 
     {
         id : 2,
-        title: "Travel Jornal",
+        title: "Meme Generator",
         description: "Built with Reactjs",
         projectUrl: "https://goo.gl/maps/1DGM5WrWnATgkSNB8",
         imageUrl: "https://source.unsplash.com/WLxQvbMyfas",
@@ -19,7 +19,7 @@ export default [
 
     {
         id : 3,
-        title: "Travel Jornal",
+        title: "Game",
         description: "Built with Reactjs",
         projectUrl: "https://goo.gl/maps/1DGM5WrWnATgkSNB8",
         imageUrl: "https://source.unsplash.com/WLxQvbMyfas",

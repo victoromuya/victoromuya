@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
+  max-width: 100%;
 }
 
 /*Navbar styles */
@@ -23,7 +23,11 @@ nav {
 
 nav.dark {
   background-color: #21222A;
-  color: whitesmoke;
+  color: #FFD700;
+}
+
+nav.dark .nav--logo_text:hover{
+  color:white
 }
 
 .nav--logo_icon {
@@ -35,6 +39,10 @@ nav.dark {
   
   margin-right: auto;
   
+}
+
+.nav--logo_text:hover {
+  color: #FFD700;
 }
 
 .nav--title {
@@ -117,6 +125,10 @@ section.dark{
   margin: 0;
 }
 
+section.dark i{
+  color: #FFD700;
+}
+
 .hero{
   display: flex;
   /*background-color:#263238; */
@@ -178,10 +190,10 @@ section.dark{
 .home-text{
   align-items: center;
   margin-left: 5%;
-  min-width: 100%;
+  min-width: 95%;
   text-align: center;
   margin-top: 30px;
-  padding-top: 30px;
+  padding-top: 20px;
   padding-bottom: 30px;
 }
 
@@ -267,12 +279,10 @@ frame.dark{
   margin-left: 31%;
 }
 
-
-
 app{
   flex: 0 0 auto;
   display: flex;
-  padding-left: 29%;
+  padding-left: 30%;
   max-width: 100%;
   flex-basis: 33.333333%;
   flex-wrap: wrap;
@@ -304,12 +314,12 @@ main{
 
 
 .card {
-  
+  padding: 2px;
   width: 200px;
   height: 300px;
   font-size: 14px;
   position: relative;
-  margin: 20px;
+  margin: 15px;
   -webkit-transition: all 2s ease;
   -moz-transition: all 2s ease;
   -ms-transition: all 2s ease;
@@ -364,6 +374,11 @@ main{
   font-weight: bold;
   font-size: 16px;
   padding-top: 5px;
+  padding-left: 10px;
+}
+
+.card  p{
+  padding-left: 10px;
 }
 
 .card-badge{
