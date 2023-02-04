@@ -1,9 +1,9 @@
 import  React from 'react'
 
 
-export default function Footer(){
+export default function Footer(props){
     return(
-        <footer class="footer">
+          <footer className={props.darkMode ? 'dark' : " " }>
             <div class="container bottom_border">
             <div class="row">
             <div class=" col-sm-4 col-md col-sm-4  col-12 col">
@@ -60,5 +60,6 @@ export default function Footer(){
             </div>
 
         </footer>
+
     )
 }

@@ -21,25 +21,28 @@ export default function Card(props){
     }
     
     return (
-        <main className={props.darkMode ? "dark": ""}>
-            <div className="card">
-
+        <div className='wow fadeInUp' data-wow-delay="0.1s">
+            <main className={props.darkMode ? "dark": ""}>
+                <div className="card">
                     <a href={props.item.projectUrl}>
-                        {badgeText && <div className='card-badge'>{badgeText}</div>}
+                            {badgeText && <div className='card-badge'>{badgeText}</div>}
 
-                        <img src= {props.item.imageUrl} alt="" className='card-image'/> 
-                                <div class="middle">
-                                    <div class="text">View Project</div>
-                                </div>
+                            <img src= {props.item.imageUrl} alt="" className='card-image'/> 
+                                    <div class="middle">
+                                        <div class="text">View Project</div>
+                                    </div>
 
-                        <div className='card-stats'>
-                            <span>{props.item.title}</span>
-                        </div>
-                        <p>{props.item.description}</p>
-                        <p><i>designed by: </i> Victor Omuya</p>
+                            <div className='card-stats'>
+                                <span>{props.item.title}</span>
+                            </div>
+                            <p>{props.item.description}</p>
+                            <p><i>designed by: </i> Victor Omuya</p>
                     </a>
+            
+                    
             </div>
         </main>
+        </div>
        
     )
 }

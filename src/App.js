@@ -31,7 +31,7 @@ function App() {
       <app className={darkMode ? "dark" : ""}>
           {items}
       </app>
-      <Footer/>
+      <Footer darkMode={darkMode}/>
      </div> 
   );
 }
