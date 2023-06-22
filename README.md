@@ -1,4 +1,4 @@
-### Hi there!, Welcome to my world. Lets have some fun coding 👋
+### Hi there!, Welcome to my world. Let us have some fun coding 👋
 
 <!--
 **victoromuya/victoromuya** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
